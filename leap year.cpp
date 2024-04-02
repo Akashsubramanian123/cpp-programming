@@ -2,15 +2,16 @@
 using namespace std;
 int main()
 {
-	int x,y;
-	cout<<"enter the year to check leap year:";
-	cin>>x;
-	
-	if(x%4==0&&x%100!=0||x%400==0 )
+	int year;
+	cout<<"Enter a year : ";
+	cin>>year;
+	if(year%400==0||year%4==0&&year%100!=0)
 	{
-		cout<<"the given year is leap year";
+		cout<<year<<" is a leap year!";
 	}
-	else{
-		cout<<"remaining year for leap year: "<<4-x%4;
+	else
+	{
+		cout<<year<<" is not a leap year!";
 	}
+	return 0;
 }
