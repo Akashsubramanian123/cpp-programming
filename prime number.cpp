@@ -17,7 +17,7 @@ int main()
 		{
 			cout<<num<<" is prime!";
 			break;
-		}
+		} 
 		case 1:
 		{
 			cout<<num<<" is neither prime nor composite!";
